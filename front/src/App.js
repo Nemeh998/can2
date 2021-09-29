@@ -12,6 +12,9 @@ import Profile from './Profile';
 // import { useAuth0 } from "@auth0/auth0-react";
 import { withAuth0 } from '@auth0/auth0-react';
 import MyFav from './MyFav'
+import Appcat from './cat/Appcat';
+import ProfileCat from './cat/ProfileCat';
+
 class App extends React.Component {
 
   constructor(props) {
@@ -48,9 +51,14 @@ class App extends React.Component {
             <Route exact path="/Profile">
             <Profile/>
             </Route >
+            <Route exact path="/Profilecat">
+       <ProfileCat/>
+            </Route >
           </Switch>
           <Footer />
         </Router>
+
+
       </>
     )
   }

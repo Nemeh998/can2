@@ -7,11 +7,12 @@ class Profile extends Component {
     return(
 <>
 {isAuthenticated&&
-      <div>Hello{user.name} </div>
-      &&
-     
-     
-      <div>Hello{user.email} </div> 
+<>
+<img src={user.pictrue} alt='pic'></img>
+      <div>Hello{user.name}  </div>
+      <div>{user.email}</div>
+      
+ </>
       }
       
       </>
